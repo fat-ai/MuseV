@@ -46,7 +46,7 @@ from musev import logger
 logger.setLevel("INFO")
 
 file_dir = os.path.dirname(__file__)
-PROJECT_DIR = os.path.join(os.path.dirname(__file__), "../..")
+PROJECT_DIR = os.path.join(os.path.dirname(__file__), "")
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
 
 
