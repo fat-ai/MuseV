@@ -1,12 +1,12 @@
 import os
 
 IPAdapterModelDir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "../../checkpoints", "IP-Adapter"
+    os.path.dirname(os.path.abspath(__file__)), "/content/MuseV/checkpoints", "IP-Adapter"
 )
 
 
 MotionDir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "../../checkpoints", "motion"
+    os.path.dirname(os.path.abspath(__file__)), "/content/MuseV/checkpoints", "motion"
 )
 
 
