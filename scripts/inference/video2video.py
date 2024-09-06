@@ -82,7 +82,7 @@ def parse_args():
     parser.add_argument(
         "--unet_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/motion_model.py"),
+        default=os.path.join(PROJECT_DIR, "onfigs/model/motion_model.py"),
         help="Path to motion_cfg path or motion unet path",
     )
     parser.add_argument(
@@ -97,7 +97,7 @@ def parse_args():
     parser.add_argument(
         "--lcm_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/lcm_model.py"),
+        default=os.path.join(PROJECT_DIR, "onfigs/model/lcm_model.py"),
         help="Path to lcm lora path",
     )
     parser.add_argument(
@@ -112,7 +112,7 @@ def parse_args():
     parser.add_argument(
         "--referencenet_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/referencenet.py"),
+        default=os.path.join(PROJECT_DIR, "onfigs/model/referencenet.py"),
         help="Path to referencenet model config path",
     )
     parser.add_argument(
@@ -125,7 +125,7 @@ def parse_args():
     parser.add_argument(
         "--ip_adapter_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/ip_adapter.py"),
+        default=os.path.join(PROJECT_DIR, "onfigs/model/ip_adapter.py"),
         help="Path to ip_adapter model config path",
     )
     parser.add_argument(
@@ -138,8 +138,8 @@ def parse_args():
     parser.add_argument(
         "--vision_clip_model_path",
         type=str,
-        default="./checkpoints/ip_adapter/models/image_encoder",
-        help="vision_clip_extractor_class_name vision_clip_model_path, default=`./checkpoints/ip_adapter/models/image_encoder`",
+        default="./MuseV/checkpoints/ip_adapter/models/image_encoder",
+        help="vision_clip_extractor_class_name vision_clip_model_path, default=`./MuseV/checkpoints/ip_adapter/models/image_encoder`",
     )
     parser.add_argument(
         "--vision_clip_extractor_class_name",
@@ -151,7 +151,7 @@ def parse_args():
     parser.add_argument(
         "--facein_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/facein.py"),
+        default=os.path.join(PROJECT_DIR, "./MuseV/configs/model/facein.py"),
         help="Path to facein model config path",
     )
     parser.add_argument(
@@ -163,7 +163,7 @@ def parse_args():
     parser.add_argument(
         "--ip_adapter_face_model_cfg_path",
         type=str,
-        default=os.path.join(PROJECT_DIR, "./configs/model/ip_adapter.py"),
+        default=os.path.join(PROJECT_DIR, "./MuseV/configs/model/ip_adapter.py"),
         help="Path to facein model config path",
     )
     parser.add_argument(
@@ -504,9 +504,9 @@ def parse_args():
     )
     parser.add_argument(
         "--vae_model_path",
-        default="./checkpoints/vae/sd-vae-ft-mse",
+        default="./MuseV/checkpoints/vae/sd-vae-ft-mse",
         type=str,
-        help="vae path, default=`./checkpoints/vae/sd-vae-ft-mse`",
+        help="vae path, default=`./MuseV/checkpoints/vae/sd-vae-ft-mse`",
     )
     parser.add_argument(
         "--redraw_condition_image_with_ip_adapter_face",
@@ -763,17 +763,17 @@ else:
     )
 b = 1
 negative_embedding = [
-    ["./checkpoints/embedding/badhandv4.pt", "badhandv4"],
+    [".MuseV//checkpoints/embedding/badhandv4.pt", "badhandv4"],
     [
-        "./checkpoints/embedding/ng_deepnegative_v1_75t.pt",
+        ".MuseV//checkpoints/embedding/ng_deepnegative_v1_75t.pt",
         "ng_deepnegative_v1_75t",
     ],
     [
-        "./checkpoints/embedding/EasyNegativeV2.safetensors",
+        ".MuseV//checkpoints/embedding/EasyNegativeV2.safetensors",
         "EasyNegativeV2",
     ],
     [
-        "./checkpoints/embedding/bad_prompt_version2-neg.pt",
+        ".MuseV//checkpoints/embedding/bad_prompt_version2-neg.pt",
         "bad_prompt_version2-neg",
     ],
 ]
