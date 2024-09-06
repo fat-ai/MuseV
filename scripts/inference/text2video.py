@@ -646,17 +646,17 @@ n_repeat = args.n_repeat
 
 b = 1
 negative_embedding = [
-    ["./checkpoints/embedding/badhandv4.pt", "badhandv4"],
+    ["./MuseV/checkpoints/embedding/badhandv4.pt", "badhandv4"],
     [
-        "./checkpoints/embedding/ng_deepnegative_v1_75t.pt",
+        "./MuseV/checkpoints/embedding/ng_deepnegative_v1_75t.pt",
         "ng_deepnegative_v1_75t",
     ],
     [
-        "./checkpoints/embedding/EasyNegativeV2.safetensors",
+        "./MuseV/checkpoints/embedding/EasyNegativeV2.safetensors",
         "EasyNegativeV2",
     ],
     [
-        "./checkpoints/embedding/bad_prompt_version2-neg.pt",
+        "./MuseV/checkpoints/embedding/bad_prompt_version2-neg.pt",
         "bad_prompt_version2-neg",
     ],
 ]
