@@ -9,7 +9,7 @@
 #   img_length_ratio: float, generation video size is (height, width) * img_length_ratio
 
 # text/image2video
-- condition_images: ./data/images/yongen.jpeg
+- condition_images: ./MuseV/data/images/yongen.jpeg
   eye_blinks_factor: 1.8
   height: 1308
   img_length_ratio: 0.957
