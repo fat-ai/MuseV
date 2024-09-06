@@ -19,7 +19,7 @@
   refer_image: ${.condition_images}
   video_path: null
   width: 736
-- condition_images: ./data/images/jinkesi2.jpeg
+- condition_images: ./MuseV/data/images/jinkesi2.jpeg
   eye_blinks_factor: 1.8
   height: 714
   img_length_ratio: 1.25
