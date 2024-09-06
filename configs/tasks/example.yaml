@@ -100,7 +100,7 @@
   refer_image: ${.condition_images}
   video_path: null
   width: 471
-- condition_images: ./data/images/Mona_Lisa..jpg
+- condition_images: ./MuseV/data/images/Mona_Lisa..jpg
   eye_blinks_factor: 1.8
   height: 894
   img_length_ratio: 1.173
