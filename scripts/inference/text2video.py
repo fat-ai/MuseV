@@ -175,7 +175,7 @@ def parse_args():
     parser.add_argument(
         "--output_dir",
         type=str,
-        default=os.path.join(PROJECT_DIR, "results"),
+        default="/home/user/app",
         help="Output directory, default=`/home/user/app`",
     )
     parser.add_argument(
