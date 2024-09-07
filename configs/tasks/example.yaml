@@ -178,8 +178,8 @@
 # video2video
 - name: "dance1"
   prompt: "(masterpiece, best quality, highres:1) , a girl is dancing, wearing a dress made of stars, animation"
-  video_path:  ./data/source_video/video1_girl_poseseq.mp4 
-  condition_images: ./data/images/spark_girl.png
+  video_path:  ./MuseV/data/source_video/video1_girl_poseseq.mp4 
+  condition_images: ./MuseV/data/images/spark_girl.png
   refer_image: ${.condition_images}
   ipadapter_image: ${.condition_images}
   height: 960
