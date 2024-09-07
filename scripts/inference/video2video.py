@@ -176,7 +176,7 @@ def parse_args():
         "--output_dir",
         type=str,
         default=os.path.join(PROJECT_DIR, "results"),
-        help="Output directory, default=`musev/results`",
+        help="Output directory, default=`./MuseV/musev/results`",
     )
     parser.add_argument(
         "--save_filetype",
