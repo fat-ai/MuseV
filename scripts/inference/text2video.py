@@ -176,7 +176,7 @@ def parse_args():
         "--output_dir",
         type=str,
         default=os.path.join(PROJECT_DIR, "results"),
-        help="Output directory, default=`musev/results`",
+        help="Output directory, default=`/home/user/app`",
     )
     parser.add_argument(
         "--save_filetype",
@@ -1204,18 +1204,7 @@ for model_name, sd_model_params in sd_model_params_dict.items():
         for i_num in range(n_repeat):
             test_data_seed = random.randint(0, 1e8) if seed is None else seed
             cpu_generator, gpu_generator = set_all_seed(test_data_seed)
-            save_file_name = (
-                f"m={model_name}_rm={referencenet_model_name}_case={test_data_name}"
-                f"_w={test_data_width}_h={test_data_height}_t={time_size}_nb={n_batch}"
-                f"_s={test_data_seed}_p={prompt_hash}"
-                f"_w={test_data_img_weight}"
-                f"_ms={test_data_motion_speed}"
-                f"_s={strength}_g={video_guidance_scale}"
-                f"_c-i={test_data_condition_images_name[:5]}_r-c={test_data_redraw_condition_image}"
-                f"_w={test_data_w_ind_noise}_{test_data_video_negative_prompt_name}"
-                f"_r={test_data_refer_image_name[:3]}_ip={test_data_refer_image_name[:3]}_f={test_data_refer_face_image_name[:3]}"
-            )
-
+            save_file_name = "output"
             save_file_name = clean_str_for_save(save_file_name)
             output_path = os.path.join(
                 output_dir,
